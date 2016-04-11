@@ -188,7 +188,7 @@ Kotlin（と、Kotlinで書いてる現行プロダクト）の
 
 ---
 
-forever kotlin!
+Forever Kotlin!
 
 ---
 
