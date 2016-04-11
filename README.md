@@ -17,7 +17,7 @@
 
 ---
 
-## Android
+- Android -
 
 ---
 
@@ -95,7 +95,13 @@ Kotlinの勢い
 
 ---
 
+突然のアーキテクチャ刷新
+
 ![jack_arch1](https://source.android.com/images/jack-overview.png)
+
+---
+
+![android arch](http://image.slidesharecdn.com/android-presentation-110627072852-phpapp02/95/android-development-the-basics-6-728.jpg?cb=1309160008)
 
 ---
 
@@ -108,7 +114,6 @@ Jack & Jill
 * Handles shrinking, obfuscation, repackaging and multidex
 * Java8!!!
 
-Jack (Java Android Compiler Kit) | Android Open Source Project
 https://source.android.com/source/jack.html
 
 ---
@@ -158,7 +163,8 @@ Jack's Downsides
 
 ---
 
-Kotlin（と、Kotlinで書いてる現行プロダクト）の運命やいかに？
+Kotlin（と、Kotlinで書いてる現行プロダクト）の
+運命やいかに？
 
 続報を待て！
 
