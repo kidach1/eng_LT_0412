@@ -1,4 +1,4 @@
-# 最近のAndroidを取り巻くなんたら
+## 最近のAndroidを取り巻くなんたら
 
 谷口
 
@@ -13,7 +13,7 @@
 
 ---
 
-## 最も有用な情報終わり
+最も有用な情報終わり
 
 ---
 
@@ -25,7 +25,7 @@
 
 ---
 
-## Android何で書く？
+### Android何で書く？
 
 * Java
 * Scala
@@ -47,9 +47,8 @@ oh...
 * 64k問題
 * gradleとの連携
 
-ちょっとないかなー
+けどちょっとないかなー
 
-AndroidでScalaを使う際の問題点と対策
 <http://www.slideshare.net/saturday06/pixiv0905x2>
 
 ---
@@ -58,7 +57,7 @@ AndroidでScalaを使う際の問題点と対策
 
 * Better Java - Modern Syntax, JVM lang 
 * By JetBrains
-* 2016/02, ver 1.0 released!!
+* 2016 / 02, ver 1.0 released!!
 
 ---
 
@@ -72,91 +71,144 @@ Advanced Kotlin for Android #DroidKaigi
 ![kotlin@google](https://qiita-image-store.s3.amazonaws.com/0/48274/8d64734b-37b0-1042-5d1d-e43630e11649.png)
 
 
+---
 
-```
-## This is an H2 Title
+## Kotlinの勢い
 
-Description...
-
-The horizontal slide separator characters are '---'
-
-```
-
-* Easy to write
-* Good for showing programming code
+![kotlin@kapt](https://qiita-image-store.s3.amazonaws.com/0/48274/9ac31654-247b-32da-873e-886b1714812a.png)
 
 ---
 
-## reveal.js Wrapper Apps
-
-* [App::revealup](https://metacpan.org/pod/App::revealup)
-* [revealgo](https://github.com/yusukebe/revealgo)
-
-These apps are useful for previwing on **localhost**.
-
-But only on **localhost**.
+ところが
 
 ---
 
-## I need online tool
+![jack1](https://qiita-image-store.s3.amazonaws.com/0/48274/504ed0e7-c0bf-f50a-1d59-7f392bd357ca.png)
 
-* Online access to the slides
-* Share URL quickly
-* Inspired by `godoc.org`
+![jack2](https://qiita-image-store.s3.amazonaws.com/0/48274/17342076-ac39-9b8d-4e16-cd8f441db2bb.png)
 
 ---
 
-## Slideck
+＿人人人人人人人人人人人＿
+＞　「コンパイラ変えます」　＜
+￣Y^Y^Y^Y^Y^Y^Y^Y^Y^￣
 
 ---
 
-![slideck](images/slideck_ss.png)
+![jack_arch1](https://source.android.com/images/jack-overview.png)
 
 ---
 
-## Feature
+## Jack & Jill
 
-Markdown on GitHub repo will be showed as slideshow
+2016/3/10
 
-* Compatible with reveal.js/revealgo
-* Embeded assets such as image files
-* Support private repo with GitHub sign in
-* Sanitize generated HTML from Markdown
+* Completely open source
+Available in AOSP; partners are welcome to contribute.
+* Speeds compilation time
+Jack has specific supports to reduce compilation time: pre-dexing, incremental compilation and a Jack compilation server.
+* Handles shrinking, obfuscation, repackaging and multidex
+Using a separate package such as ProGuard is no longer necessary.
+* Java8!!!
 
----
-
-## Usage
-
-* Write formatted Markdown text
-* `git push` to your own GitHub repo
-* Access to `/github.com/{owner}/{repo}/{path}`
+Jack (Java Android Compiler Kit) | Android Open Source Project
+https://source.android.com/source/jack.html
 
 ---
 
-## Example
+## 良いことだけじゃない
 
-* This Markdown Path : `github.com/yusukebe/slides/slideck.md`
-* Slideck URL : <https://slideck.io/github.com/yusukebe/slides/slideck.md>
+![jack_dark_side](https://qiita-image-store.s3.amazonaws.com/0/48274/a4a699d5-944a-66c9-41b7-02b7869e2fe1.png)
 
----
-
-## Implementation
-
-* Golang + Heroku
-
-```
-"github.com/google/go-github/github"
-"github.com/microcosm-cc/bluemonday"
-"github.com/russross/blackfriday"
-"golang.org/x/oauth2"
-"golang.org/x/oauth2/github"
-"github.com/ymichael/sessions"
-"github.com/zenazn/goji"
-"github.com/zenazn/goji/web"
-```
 
 ---
 
-## Try Slideck now!
+## Jack's Downsides
 
-<https://slideck.io>
+* Transform API is not supported by Jack - there is no intermediate Java bytecode you can modify, so some plugins I didn't mention here will stop working
+* Annotation processing is not currently supported by Jack, so if you heavily depend on libraries like Dagger, AutoValue, etc., you should think twice before switching to Jack. EDIT: As pointed out by Jake Wharton, Jack in N Preview has annotation processing support, but it is not exposed yet through Gradle.
+* Lint detectors which operate on a Java bytecode level are not supported
+* Jack is currently slower than javac + dx
+* Jacoco is not supported - well, I personally find Jacoco questionable (it doesnt really show what you want to see), so can totally live without it
+* Dexguard - enterprise version of Proguard is not currently supported
+
+
+---
+
+
+## そして何より…
+
+
+---
+
+![kotlin_jack1](https://qiita-image-store.s3.amazonaws.com/0/48274/1024969a-e193-93cc-834c-c3957dd7976d.png)
+
+![kotlin_jack2](https://qiita-image-store.s3.amazonaws.com/0/48274/07f945fc-a6d0-cc2a-9aa7-4411a6be07fd.png)
+
+Kotlinオワコン説
+
+---
+
+### why?
+
+![jack_arch2](https://qiita-image-store.s3.amazonaws.com/0/48274/88fb96b4-536d-3375-5bca-ad1c27063f7c.png)
+
+* jackでは(kotlincで吐いた).classファイルはサポートされない
+* Jillを用いたビルドではエラー
+* kotlinは.jackを吐けない
+
+---
+
+![jack_arch3](https://qiita-image-store.s3.amazonaws.com/0/48274/411f2659-a28f-9d98-2b8b-03bbd6349267.png)
+
+
+---
+
+Kotlin（と、Kotlinで書いてる現行プロダクト）の運命やいかに？続報を待て！
+
+![dounaru_kotlin](https://qiita-image-store.s3.amazonaws.com/0/48274/f7e49b70-6777-4d47-b1bf-04fa3f1a2d45.png)
+
+
+
+---
+
+### 続報ありました
+
+
+![dounaru_kotlin](https://qiita-image-store.s3.amazonaws.com/0/48274/6bcb55e3-327f-ff77-8abc-3838749b068d.png)
+
+---
+
+2016/3/30
+
+![kounaru_kotlin](https://qiita-image-store.s3.amazonaws.com/0/48274/2edff468-973a-bcea-1f88-e78c9c752bbf.png)
+
+* kotlinが吐いたbytecodeをjillで扱えるように、googleと一緒にがんばります！！１
+
+---
+
+## forever kotlin!
+
+---
+
+
+## 次回（未定）
+
+もうc#でいんじゃね？Xamarin.Android
+
+![android_xamarin](http://talkingincode.com/wp-content/uploads/2015/07/xamlo.jpg)
+
+![android_xamarin](https://qiita-image-store.s3.amazonaws.com/0/48274/3ac66130-8674-2dce-18dc-07d3f0dba524.png)
+
+---
+
+## 次回（未定）その2
+
+もうswiftでいんじゃね？ Swift@Android
+
+![android_swift](https://qiita-image-store.s3.amazonaws.com/0/48274/f99c4d08-b905-5a5c-8639-1fa662d9f902.png)
+
+---
+
+Thank You!
+
