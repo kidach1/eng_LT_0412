@@ -39,19 +39,51 @@ Android, 何で書く？
 
 Java
 
+---
+
 oh...
+
+```
+String[][] helloAndGoodbye = {{"Hello", "world!"}, {"goodbye", "world!"}};
+Observable.from(helloAndGoodbye)
+        .flatMap(new Func1<String[], Observable<String>>() {
+            @Override
+            public Observable<String> call(String[] strings) {
+                return Observable.from(strings);
+            }
+        })
+        .filter(new Func1<String, Boolean>() {
+            @Override
+            public Boolean call(String s) {
+                return !s.equals("world!");
+            }
+        })
+        .map(new Func1<String, Integer>() {
+            @Override
+            public Integer call(String s) {
+                return s.length();
+            }
+        })
+        .subscribe(new Action1<Integer>() {
+            @Override
+            public void call(Integer i) {
+                 System.out.println(i)
+            }
+        });
+```
 
 ---
 
+
 Scala
 
-言語としては良いっぽい
+良い言語という話はよく聞くけど
 
 * compile time
-* 64k問題
-* gradleとの連携
+* 65k問題
+* gradleとの連携✕
 
-けどちょっとないかなー
+厳しいかな…
 
 <http://www.slideshare.net/saturday06/pixiv0905x2>
 
@@ -62,6 +94,15 @@ Kotlin
 * Better Java - Modern Syntax, JVM lang 
 * By JetBrains
 * 2016 / 02, ver 1.0 released!!
+
+
+```
+return Observable.from(commentsDesc)
+        .map { comment -> toComment(comment) }
+        .toList()
+        .toBlocking()
+        .single()
+```
 
 ---
 
