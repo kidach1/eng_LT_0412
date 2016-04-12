@@ -146,6 +146,8 @@ kidach1/AndroidSwayAnimation:
 
 ---
 
+2016/3/10
+
 ![jack1](https://qiita-image-store.s3.amazonaws.com/0/48274/504ed0e7-c0bf-f50a-1d59-7f392bd357ca.png)
 
 ![jack2](https://qiita-image-store.s3.amazonaws.com/0/48274/17342076-ac39-9b8d-4e16-cd8f441db2bb.png)
@@ -153,7 +155,6 @@ kidach1/AndroidSwayAnimation:
 Android N preview!!
 
 ---
-
 
 ![suddenly_jack](https://qiita-image-store.s3.amazonaws.com/0/48274/4ca569d1-afbe-11ad-d93f-986d55436351.png)
 
@@ -164,7 +165,9 @@ Android N preview!!
 
 ![jack_arch1](https://source.android.com/images/jack-overview.png)
 
+
 ---
+
 
 ![android arch](http://image.slidesharecdn.com/android-presentation-110627072852-phpapp02/95/android-development-the-basics-6-728.jpg?cb=1309160008)
 
@@ -172,7 +175,6 @@ Android N preview!!
 
 Jack & Jill
 
-2016/3/10
 
 * Completely open source
 * Speeds compilation time
