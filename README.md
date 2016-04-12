@@ -95,6 +95,11 @@ Kotlin
 * By JetBrains
 * 2016 / 02, ver 1.0 released!!
 
+---
+
+* lambda
+* optional
+* Extension function
 
 ```
 return Observable.from(commentsDesc)
@@ -132,6 +137,8 @@ Kotlinの勢い
 
 ![jack2](https://qiita-image-store.s3.amazonaws.com/0/48274/17342076-ac39-9b8d-4e16-cd8f441db2bb.png)
 
+Android N preview!!
+
 ---
 
 
@@ -157,7 +164,7 @@ Jack & Jill
 * Completely open source
 * Speeds compilation time
 * Handles shrinking, obfuscation, repackaging and multidex
-* Java8!!!
+* Realistic Java8!
 
 https://source.android.com/source/jack.html
 
@@ -198,7 +205,7 @@ Jack's Downsides
 ![jack_arch2](https://qiita-image-store.s3.amazonaws.com/0/48274/88fb96b4-536d-3375-5bca-ad1c27063f7c.png)
 
 * jackでは(kotlincで吐いた).classファイルはサポートされない
-* Jillを用いたビルドではエラー
+* Jill経由でkotlinで作った.jarを通してもビルドエラー
 * kotlinは.jackを吐けない
 
 ---
