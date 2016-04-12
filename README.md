@@ -129,11 +129,14 @@ Kotlinの勢い
 
 ---
 
+作ってみた
 
-kidach1/AndroidTinderSwipe: Useful swipe-card libraries, just like Tinder.
+kidach1/AndroidTinderSwipe: 
+ Useful swipe-card libraries, just like Tinder.
 <https://github.com/kidach1/AndroidTinderSwipe>
 
-kidach1/AndroidSwayAnimation: Smooth sway animation for Android.
+kidach1/AndroidSwayAnimation: 
+ Smooth sway animation for Android.
 <https://github.com/kidach1/AndroidSwayAnimation>
 
 
