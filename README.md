@@ -170,10 +170,13 @@ https://source.android.com/source/jack.html
 
 ---
 
-良いことだけじゃない
+![jack_arch3](https://qiita-image-store.s3.amazonaws.com/0/48274/411f2659-a28f-9d98-2b8b-03bbd6349267.png)
+
+---
+
+もちろん良いことだけじゃない
 
 ![jack_dark_side](https://qiita-image-store.s3.amazonaws.com/0/48274/a4a699d5-944a-66c9-41b7-02b7869e2fe1.png)
-
 
 ---
 
@@ -181,8 +184,8 @@ Jack's Downsides
 
 * Transform API is not supported by Jack
 * Annotation processing is not currently supported by Jack
-* Lint detectors which operate on a Java bytecode level are not supported
 * Jack is currently slower than javac + dx
+etc..
 
 ---
 
@@ -196,7 +199,7 @@ Jack's Downsides
 
 ![kotlin_jack2](https://qiita-image-store.s3.amazonaws.com/0/48274/07f945fc-a6d0-cc2a-9aa7-4411a6be07fd.png)
 
-突然のKotlinオワコン説
+Kotlinオワコン説＼(^o^)／
 
 ---
 
@@ -212,11 +215,9 @@ Jack's Downsides
 
 ![jack_arch3](https://qiita-image-store.s3.amazonaws.com/0/48274/411f2659-a28f-9d98-2b8b-03bbd6349267.png)
 
-
 ---
 
-Kotlin（と、Kotlinで書いてる現行プロダクト）の
-運命やいかに？
+Kotlinの運命やいかに？
 
 続報を待て！
 
@@ -225,14 +226,12 @@ Kotlin（と、Kotlinで書いてる現行プロダクト）の
 
 ---
 
-続報ありました
+2016/3/30 続報ありました
 
 
 ![dounaru_kotlin](https://qiita-image-store.s3.amazonaws.com/0/48274/6bcb55e3-327f-ff77-8abc-3838749b068d.png)
 
 ---
-
-2016/3/30
 
 ![kounaru_kotlin](https://qiita-image-store.s3.amazonaws.com/0/48274/2edff468-973a-bcea-1f88-e78c9c752bbf.png)
 
