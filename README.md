@@ -37,11 +37,9 @@ Android, 何で書く？
 
 ---
 
-Java
+Java...
 
 ---
-
-oh...
 
 ```
 String[][] helloAndGoodbye = {{"Hello", "world!"}, {"goodbye", "world!"}};
